@@ -1,0 +1,87 @@
+
+.wrapper { 
+  width: auto;
+  height: fit-content;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/004/968/002/original/cute-abstract-modern-background-free-vector.jpg');
+  /* background: rgb(240, 218, 27); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+.heading { 
+  margin: 20px 10px ;
+  
+}
+
+.input { 
+  margin: 20px 10px;
+  border: 2px solid #876;
+  height: 50px;
+  width: 42%;
+}
+
+.button{ 
+  font-weight: 900px;
+}
+
+.content { 
+  width: 50%;
+  margin: 20px 10px ;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.img{ 
+  height: 50px;
+}
+
+.todo { 
+  line-height: 40px;
+  border-radius: 5px;
+  display: flex;
+  margin-left: 10px;
+  margin-top: 5px;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+  width:90%;
+  border: 2px solid black;
+  background-color: azure;
+  box-sizing: border-box;
+}
+
+.option { 
+  display: flex;
+}
+
+.todo-check{
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  padding: 3px;
+  height: 20px;
+  width: 20px;
+  font-style: 50px;
+}
+
+.todo.checked { 
+  text-decoration: line-through;
+} 
+
+.todo-delete{
+  margin: auto;
+  border: 2px solid #eb1919;
+  color: #eb1919;
+  box-shadow: 2px;
+  cursor: pointer;
+  padding-left: 7px;
+  padding-bottom: 9px;
+  height: 15px;
+  width: 16px;
+}
