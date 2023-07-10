@@ -7,7 +7,6 @@ const Content = ({ todo, setTodoList, todoList, index, checkTodo, setCheckTodo, 
 
 
   const handleCheckTodo = (completeId) => {
-    // console.log(completeId);
     const todoListTmp = [...todoList]
     todoListTmp.map((todo) => {
       if (todo.id === completeId) {
@@ -62,14 +61,14 @@ const Content = ({ todo, setTodoList, todoList, index, checkTodo, setCheckTodo, 
 
 
   return (
-    
+
     <div className='content'>
       {!edit ?
         <div
           className={`todo ${todo.isCompleted ? 'checked' : ''}  `}
           onDoubleClick={handleEditTodo}
         >
-          <img className='img' src={todo.images.jpg.image_url} />
+          {todo.image ? <img className='img' src={todo.image} /> : <div>{todo.title}</div>}
         </div> :
         <input
           className={`todo `}

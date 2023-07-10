@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 const Heading = ({ todoList, setTodoList }) => {
 
   const [inputValue, setInputValue] = useState('')
-// keyPress Event 
+  // keyPress Event 
   // const enterAddTodo = (e) => { 
   //   if(e.keyCode === 13 ) { 
   //     const todoTemp = {
@@ -25,7 +25,6 @@ const Heading = ({ todoList, setTodoList }) => {
       id: todoList.length + 1,
       title: inputValue,
       isCompleted: false,
-      
     }
     const newTodo = [...todoList]
     newTodo.push(todoTemp)
